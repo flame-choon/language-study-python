@@ -3,6 +3,8 @@
 # import <패키지 이름>.<모듈 이름>
 import ch06_package.ch06_sms as ch06_sms     
 import ch06_package.ch06_email as ch06_email
+
+# pip3 로 설치한 패키지를 Import
 from geopy.geocoders import Nominatim
 
 s = ch06_sms.SMS()
