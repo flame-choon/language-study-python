@@ -21,11 +21,6 @@ def get_stock_summary(itemcode):
     raw_resp = requests.get("https://api.finance.naver.com/service/itemSummary.naver?itemcode=" + itemcode)
     resp = raw_resp.json()
     return resp
-    # current_price = 100
-    # return {
-    #     'current_price': current_price,
-    #     'itemcode': itemcode
-    # }
 
 # 실시간 인기 종목 알아보기
 def get_trending_stocks():
@@ -38,9 +33,6 @@ def get_trending_stocks():
 def visualize_trending_stock(stocks):
     stocks_df = pd.DataFrame(stocks)
     stocks_df.to_html("tmp.html")
-
-
-
 
 # summary = get_stock_summary('035720')
 # print(summary)
