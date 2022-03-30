@@ -34,8 +34,10 @@ def visualize_trending_stock(stocks):
     stocks_df = pd.DataFrame(stocks)
     stocks_df.to_html("tmp.html")
 
+# 특정 종목의 정보 호출
 # summary = get_stock_summary('035720')
 # print(summary)
+
 trending_stocks = get_trending_stocks()
 print(trending_stocks)
 visualize_trending_stock(trending_stocks)
